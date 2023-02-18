@@ -23,4 +23,12 @@ function getInputValueById(inputFieldId) {
     return inputValue;
 }
 
+// Get Element Value Function
+function getElementValueById(elementId) {
+    const elementValueString = document.getElementById(elementId).innerText;
+    const elementValue = parseFloat(elementValueString);
+    return elementValue;
+}
+
+
 
