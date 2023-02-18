@@ -8,11 +8,19 @@ function showData(geometryName, geometryResult) {
     
     <td>${serial}</td>
     <td>${geometryName}</td>
-    <td>${geometryResult}m<sup>2</sup></td>
+    <td>${geometryResult}cm<sup>2</sup></td>
     <td><button class="btn btn-sm">Convert to m<sup>2</sup></button></td>
     
     `
     tableToday.appendChild(tr)
+}
+
+// Get Input Value Function
+function getInputValueById(inputFieldId) {
+    const inputField = document.getElementById(inputFieldId);
+    const inputValueString = inputField.value;
+    const inputValue = parseFloat(inputValueString);
+    return inputValue;
 }
 
 
