@@ -7,10 +7,10 @@ function showData(geometryName, geometryResult) {
     const tr = document.createElement('tr');
     tr.innerHTML = `
     
-    <td>${serial}</td>
+    <td>${serial}.</td>
     <td>${geometryName}</td>
     <td>${geometryResult}cm<sup>2</sup></td>
-    <td><button class="btn btn-sm">Convert to m<sup>2</sup></button></td>
+    <td><button class="btn btn-sm btn-primary">Convert to m<sup>2</sup></button></td>
     
     `
     tableToday.appendChild(tr)
