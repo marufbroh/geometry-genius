@@ -31,6 +31,23 @@ function getElementValueById(elementId) {
     return elementValue;
 }
 
+// random color funntion
+function randomColor() {
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    return 'rgb(' + color.join(', ') + ')';
+  }
+
+// card body
+const allcardBody = document.getElementsByClassName('card-random-color');
+for(const cardBody of allcardBody){
+    cardBody.addEventListener('mouseover', function(event){
+        cardBody.style.backgroundColor = randomColor();
+    })
+}
+
 
 // Triangle Button Add Event Listener
 document.getElementById('triangle-btn').addEventListener('click', function () {
