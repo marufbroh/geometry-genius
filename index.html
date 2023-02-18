@@ -17,8 +17,8 @@
         <section class="lg:px-12 mt-12">
             <div class="navbar bg-cyan-100 lg:px-12 rounded-xl py-4">
                 <div class="flex-1">
-                    <a class="normal-case text-5xl font-bold">Interactive <br> <span
-                            class="normal-case text-3xl font-semibold">Geometry Genius</span></a>
+                    <a class="normal-case text-3xl lg:text-5xl font-bold">Interactive <br> <span
+                            class="normal-case text-2xl lg:text-3xl font-semibold">Geometry Genius</span></a>
                 </div>
                 <div class="flex-none">
                     <a href="blog.html"><button class="btn btn-active btn-primary px-10">Blog</button></a>
@@ -26,6 +26,132 @@
             </div>
         </section>
     </header>
+
+
+
+    <main>
+        <section class="lg:px-12 my-12 flex flex-col lg:flex-row gap-4">
+
+            <!-- Geometry Card Section -->
+            <div class="geometry-details w-full lg:w-[70%] grid lg:grid-cols-3 gap-4">
+
+                <div class="card card-compact bg-base-100 shadow-xl p-8 border">
+                    <figure><img class="my-5" src="images/triangle.png" alt="Triangle" /></figure>
+                    <div class="card-body">
+
+                        <h2 id="" class="text-3xl font-bold text-center">Triangle</h2>
+                        <p class="text-xl font-semibold text-center">Area (A) = 0.5 * b * h</p>
+
+                        <div class="form-control gap-2 mb-4 mx-auto">
+                            <label>
+                                <input type="text" placeholder="b" class="input input-bordered" />
+                                <span>cm</span>
+                            </label>
+                            <label>
+                                <input type="text" placeholder="h" class="input input-bordered" />
+                                <span>cm</span>
+                            </label>
+                        </div>
+
+                        <div class="card-actions mx-auto">
+                            <button id="" class="btn btn-primary px-8">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-compact bg-base-100 shadow-xl p-8 border">
+                    <figure><img class="my-5" src="images/rectangle.png" alt="Rectangle" /></figure>
+                    <div class="card-body">
+
+                        <h2 id="" class="text-3xl font-bold text-center">Rectangle</h2>
+                        <p class="text-xl font-semibold text-center">Area (A) = w * l</p>
+
+                        <div class="form-control gap-2 mb-4 mx-auto">
+                            <label>
+                                <input type="text" placeholder="w" class="input input-bordered" />
+                                <span>cm</span>
+                            </label>
+                            <label>
+                                <input type="text" placeholder="l" class="input input-bordered" />
+                                <span>cm</span>
+                            </label>
+                        </div>
+
+                        <div class="card-actions mx-auto">
+                            <button id="" class="btn btn-primary px-8">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-compact bg-base-100 shadow-xl p-8 border">
+                    <figure><img class="my-5" src="images/parallelogram.png" alt="Parallelogram" /></figure>
+                    <div class="card-body">
+
+                        <h2 id="" class="text-3xl font-bold text-center">Parallelogram</h2>
+                        <p class="text-xl font-semibold text-center">Area (A) = b * h</p>
+
+                        <p class="text-2xl font-semibold text-center my-10">b=10cm, h=12cm</p>
+
+                        <div class="card-actions mx-auto">
+                            <button id="" class="btn btn-primary px-8">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-compact bg-base-100 shadow-xl p-8 border">
+                    <figure><img class="my-5" src="images/rhombus.png" alt="Rhombus" /></figure>
+                    <div class="card-body">
+
+                        <h2 id="" class="text-3xl font-bold text-center">Rhombus</h2>
+                        <p class="text-xl font-semibold text-center">Area (A) = 0.5 * d <sub>1</sub> * d <sub>2</sub>
+                        </p>
+
+                        <p class="text-2xl font-semibold text-center my-10">d <sub>1</sub> = 16cm, d <sub>2</sub> = 8cm
+                        </p>
+
+                        <div class="card-actions mx-auto">
+                            <button id="" class="btn btn-primary px-8">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-compact bg-base-100 shadow-xl p-8 border">
+                    <figure><img class="my-5" src="images/pentagon.png" alt="Pentagon" /></figure>
+                    <div class="card-body">
+
+                        <h2 id="" class="text-3xl font-bold text-center">Pentagon</h2>
+                        <p class="text-xl font-semibold text-center">Area (A) = 0.5 * p * b</p>
+
+                        <p class="text-2xl font-semibold text-center my-10">p = 6cm, b = 10cm</p>
+
+                        <div class="card-actions mx-auto">
+                            <button id="" class="btn btn-primary px-8">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-compact bg-base-100 shadow-xl p-8 border">
+                    <figure><img class="my-5" src="images/ellipse.png" alt="Ellipse" /></figure>
+                    <div class="card-body">
+
+                        <h2 id="" class="text-3xl font-bold text-center">Ellipse</h2>
+                        <p class="text-xl font-semibold text-center">Area (A) = 3.14 * a * b</p>
+
+                        <p class="text-2xl font-semibold text-center my-10">a = 10cm, b = 4cm</p>
+
+                        <div class="card-actions mx-auto">
+                            <button id="" class="btn btn-primary px-8">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+    </main>
 
     <script src="js/index.js"></script>
 </body>
